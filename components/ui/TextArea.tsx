@@ -4,19 +4,17 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 import { useMotionTemplate, useMotionValue, motion } from "framer-motion";
 
-export interface TextAreaProps
-    extends React.InputHTMLAttributes<HTMLInputElement> {}
 
-const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
+const TextArea = React.forwardRef<HTMLTextAreaElement, React.InputHTMLAttributes<HTMLInputElement>>(
     ({ className, type, ...props }, ref) => {
         const radius = 100; // change this to increase the rdaius of the hover effect
         const [visible, setVisible] = React.useState(false);
 
-        let mouseX = useMotionValue(0);
-        let mouseY = useMotionValue(0);
+        const mouseX = useMotionValue(0);
+        const mouseY = useMotionValue(0);
 
-        function handleMouseMove({ currentTarget, clientX, clientY }: any) {
-            let { left, top } = currentTarget.getBoundingClientRect();
+        function handleMouseMove({ currentTarget, clientX, clientY }: { currentTarget: HTMLElement; clientX: number; clientY: number }) {
+            const { left, top } = currentTarget.getBoundingClientRect();
 
             mouseX.set(clientX - left);
             mouseY.set(clientY - top);

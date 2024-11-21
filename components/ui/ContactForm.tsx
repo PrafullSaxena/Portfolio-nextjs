@@ -8,7 +8,7 @@ import {TextArea} from "@components/ui/TextArea";
 import {useForm} from "@formspree/react";
 import { MultiStepLoader as Loader } from "@components/ui/multi-step-loader";
 import {loadingStates} from "@data/AppConstent";
-import {IconSquareRoundedX} from "@tabler/icons-react";
+import { X } from "lucide-react";
 
 interface ContactFormProps {
     formToken: string;
@@ -108,7 +108,7 @@ export function ContactForm({formToken}:ContactFormProps) {
                       className="fixed top-4 right-4 text-black dark:text-white z-[120]"
                       onClick={() => setLoading(false)}
                   >
-                      <IconSquareRoundedX className="h-10 w-10"/>
+                      <X className="h-10 w-10"/>
                   </button>
               )}
           </div>

@@ -1,7 +1,7 @@
 
 import React from 'react'
 import ThemeSwitch from "@components/ModeToggle";
-import {navItems, Profile} from "@data/AppConstent";
+import {navItems} from "@data/AppConstent";
 import Link from "next/link";
 import Logo from "@components/Logo";
 
