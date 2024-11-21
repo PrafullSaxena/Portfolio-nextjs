@@ -16,9 +16,6 @@ import {ContactForm} from "@components/ui/ContactForm";
 export default function Home() {
     const formspreetoken = process.env.FORMSPREE_TOKEN || "";
   return (<>
-          {/*<div*/}
-          {/*    className={` relative flex items-center justify-center flex-col overflow-hidden antialiased sm:px-10 px-5`}>*/}
-
               <main className="relative flex flex-1 flex-col gap-20">
                   <MaxWidthWrapper>
                       <Nav/>
@@ -38,9 +35,6 @@ export default function Home() {
                   </section>
                   <Footer />
               </main>
-
-
-              {/*</div>*/}
       </>
 
 

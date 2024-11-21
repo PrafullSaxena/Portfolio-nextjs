@@ -204,7 +204,7 @@ export const SETTINGS = {
 }
 
 export const BusinessPage = {
-    title: "Why I’m the Engineer Your Business Needs",
+    title: "Why I’m the Engineer, Your Business Needs.",
     Titlehighlights: ["the Engineer", "full-stack developer", "problem solver"],
     desc: "In today’s fast-paced digital world, businesses need tailored solutions to stay ahead. With years of experience as a full-stack developer and problem solver, I bring a unique blend of technical expertise and creative thinking to every project.",
     data: [
