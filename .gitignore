@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+# removing .idea files
+.idea/
+
 # next.js
 /.next/
 /out/
